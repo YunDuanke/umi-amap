@@ -1,0 +1,146 @@
+
+.map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.back {
+  position: absolute;
+  bottom: .7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: .6rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: .24rem;
+  color: #FFFFFF;
+  padding: 0 .25rem;
+  background: #222222;
+}
+
+.search {
+  position: fixed;
+  top: .32rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5.23rem;
+  height: .62rem;
+  text-align: center;
+  z-index: 888;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(52, 50, 51, 0.90);
+  box-shadow: 0 .04rem .2rem 0 rgba(0, 0, 0, 0.14);
+  z-index: 887;
+}
+
+.content {
+  width: 6.57rem;
+  margin: 0 auto;
+  background-color: #fff;
+  position: fixed;
+  z-index: 887;
+  top: 1.26rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+
+  & > div {
+    width: 5.49rem;
+    height: .8rem;
+    margin: 0 auto;
+    border-bottom: .01rem solid #D6D6D6;
+    padding-top: .3rem;
+  }
+
+  & > div > div {
+    display: inline-block;
+  }
+
+  & > div > div:first-child {
+    float: left;
+    width: .5rem;
+    margin-right: .2rem;
+  }
+
+  & > div > div:last-child {
+    float: right;
+  }
+}
+
+.info {
+  text-align: left;
+  width: 3.1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  font-family: PingFangSC-Regular, serif;
+  font-size: .24rem;
+  color: #4E4E4C;
+  letter-spacing: 0;
+  margin-bottom: .08rem;
+  line-height: .55rem;
+}
+
+.adress {
+  padding-top: .12rem;
+
+  & > img {
+    width: .5rem;
+  }
+}
+
+.btn {
+  padding: 0 .25rem;
+  height: .48rem;
+  line-height: .48rem;
+  background-color: #B09973;
+  font-size: .24rem;
+  border-radius: 1rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+:global {
+
+  #map .am-search {
+    background: #EFEFEF;
+    border-radius: .295rem;
+    height: .62rem;
+  }
+
+  #map .am-search-input {
+    background: transparent;
+  }
+
+  #map .am-search-input .am-search-clear-show {
+    display: none;
+  }
+
+  #map .am-search.am-search-start .am-search-input input[type="search"] {
+    font-family: PingFangSC-Regular, serif;
+    font-size: .24rem;
+    color: #171717;
+    letter-spacing: 0;
+  }
+
+  #map .am-search-synthetic-ph-placeholder {
+    font-family: PingFangSC-Regular, serif;
+    font-size: .24rem;
+    color: #B6B6B6;
+    letter-spacing: 0;
+  }
+}
